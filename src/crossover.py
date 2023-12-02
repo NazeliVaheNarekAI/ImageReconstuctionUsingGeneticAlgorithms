@@ -2,6 +2,31 @@ from PIL import Image
 import random
 
 
+# options = {'blend': True, 'row_column_slicing': False, 'pixel_wise': False, 'random_row_column': False}
+
+def crossover(img1, img2, options, a=-1, h_prob=0.5, crossover_point=-1, img1_prob=0.5, r_prob=0.5):
+    """
+    param img1: The first parent
+    param img2: The second parent
+    param options: A dictionary of options for the crossover method
+    return: the child
+    """
+    # random choice from list given probabilities
+    choice = random.choices(list(options.keys()), weights=list(options.values()))
+    choice = choice[0]
+
+    if choice == 'blend':
+        return blend_crossover(img1, img2, a)
+    elif choice == 'row_column_slicing':
+        return row_column_slicing_crossover(img1, img2, h_prob, crossover_point)
+    elif choice == 'pixel_wise':
+        return pixel_wise_crossover(img1, img2, img1_prob)
+    elif choice == 'random_row_column':
+        return random_row_column_crossover(img1, img2, r_prob, img1_prob)
+    else:
+        raise ValueError("Invalid crossover method")
+
+
 def blend_crossover(img1, img2, a=-1):
     """
     param img1: The first parent
@@ -35,7 +60,7 @@ def row_column_slicing_crossover(img1, img2, h_prob=0.5, crossover_point=-1):
     if random.uniform(0, 1) < h_prob:
         # Horizontal crossover
         if crossover_point == -1:
-            crossover_point = random.randint(0, img1.size[0])
+            crossover_point = random.randint(0, img1.size[1])
         img1_cropped = img1.crop((0, 0, img1.size[0], crossover_point))
         img2_cropped = img2.crop((0, crossover_point, img2.size[0], img2.size[1]))
         result = Image.new("RGB", (img1.size[0], img1.size[1]))
@@ -44,8 +69,9 @@ def row_column_slicing_crossover(img1, img2, h_prob=0.5, crossover_point=-1):
     else:
         # Vertical crossover
         if crossover_point == -1:
-            crossover_point = random.randint(0, img1.size[1])
+            crossover_point = random.randint(0, img1.size[0])
         img1_cropped = img1.crop((0, 0, crossover_point, img1.size[1]))
+        # print(crossover_point)
         img2_cropped = img2.crop((crossover_point, 0, img2.size[0], img2.size[1]))
         result = Image.new("RGB", (img1.size[0], img1.size[1]))
         result.paste(img1_cropped, (0, 0))
