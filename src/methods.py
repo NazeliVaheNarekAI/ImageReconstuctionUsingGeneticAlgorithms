@@ -1,5 +1,6 @@
 from PIL import Image
 
+
 def chunking_with_padding(img, target, rows, cols, ga_function, blend_width=10, padding=(10, 10, 10, 10)):
     """
     The function divides the given image into chunks with padding,
@@ -68,8 +69,10 @@ def chunking_with_padding(img, target, rows, cols, ga_function, blend_width=10, 
             if j < cols - 1:
                 next_chunk_left = (j + 1) * chunk_width
                 blend_width_right = min(blend_width, next_chunk_left - left)
-                blend_region = res_chunks[i * cols + j].crop((chunk_width - blend_width_right, 0, chunk_width, padded_lower - padded_upper))
-                next_chunk_region = res_chunks[i * cols + (j + 1)].crop((0, 0, blend_width_right, padded_lower - padded_upper))
+                blend_region = res_chunks[i * cols + j].crop(
+                    (chunk_width - blend_width_right, 0, chunk_width, padded_lower - padded_upper))
+                next_chunk_region = res_chunks[i * cols + (j + 1)].crop(
+                    (0, 0, blend_width_right, padded_lower - padded_upper))
                 blended_edge = Image.blend(blend_region, next_chunk_region, 0.5)
                 result.paste(blended_edge, (padded_left + chunk_width - blend_width_right, padded_upper))
 
@@ -77,7 +80,8 @@ def chunking_with_padding(img, target, rows, cols, ga_function, blend_width=10, 
             if i < rows - 1:
                 next_row_upper = (i + 1) * chunk_height
                 blend_height_bottom = min(blend_width, next_row_upper - upper)
-                blend_region = res_chunks[i * cols + j].crop((0, chunk_height - blend_height_bottom, chunk_width, chunk_height))
+                blend_region = res_chunks[i * cols + j].crop(
+                    (0, chunk_height - blend_height_bottom, chunk_width, chunk_height))
                 next_row_region = res_chunks[(i + 1) * cols + j].crop((0, 0, chunk_width, blend_height_bottom))
                 blended_edge = Image.blend(blend_region, next_row_region, 0.5)
                 result.paste(blended_edge, (padded_left, padded_upper + chunk_height - blend_height_bottom))

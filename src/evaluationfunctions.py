@@ -1,11 +1,10 @@
-import numpy as np
 import math
-from scipy.ndimage import gaussian_filter
-from colormath.color_objects import sRGBColor, LabColor
-from colormath.color_conversions import convert_color
-from colormath.color_diff import delta_e_cie2000
 
+import numpy as np
 from PIL import Image
+from scipy.ndimage import gaussian_filter
+from skimage.color import rgb2lab, deltaE_ciede2000
+import cv2
 
 
 # options = {'psnr': True, 'ssim': True, 'delta_e': False, 'mse': True}
@@ -23,12 +22,15 @@ def combine_metrics(options, image1, image2, max_psnr=60, max_mse=10000):
     """
     combined_value = 1
 
+    image1 = np.array(image1)
+    image2 = np.array(image2)
+
     if options.get('psnr'):
         combined_value *= psnr(image1, image2, max_psnr)
     if options.get('ssim'):
         combined_value *= ssim(image1, image2)
     if options.get('delta_e'):
-        combined_value *= image_delta_e(image1, image2)  # Assuming image1 and image2 are file objects here
+        combined_value *= average_delta_e(image1, image2)  # Assuming image1 and image2 are file objects here
     if options.get('mse'):
         combined_value *= mse(image1, image2, max_mse)
 
@@ -43,11 +45,11 @@ def psnr(original, new, max_psnr=60):
     :param new: Second image
     :param max_psnr: Maximum PSNR value for normalization.
     """
-    mse = np.mean((original - new) ** 2)
-    if mse == 0:
-        return 100
+    mse_val = mse_raw(original, new)
+    if mse_val == 0:
+        return 1
     max_pixel = 255.0
-    psnr_val = 20 * math.log10(max_pixel / math.sqrt(mse))
+    psnr_val = 20 * math.log10(max_pixel / math.sqrt(mse_val))
     return 1 - min(psnr_val / max_psnr, 1)
     # return psnr_val
 
@@ -56,16 +58,18 @@ def ssim(img1, img2):
     """
     Compute the SSIM (Structural Similarity Index) between two images.
 
-    :param img1: First image
-    :param img2: Second image
+    :param img1: First image (PIL Image object).
+    :param img2: Second image (PIL Image object).
     :return: SSIM value
     """
     C1 = (0.01 * 255) ** 2
     C2 = (0.03 * 255) ** 2
 
+    # Convert PIL Images to NumPy arrays and then to float64
     img1 = img1.astype(np.float64)
     img2 = img2.astype(np.float64)
 
+    # SSIM calculation
     mu1 = gaussian_filter(img1, 1.5)
     mu2 = gaussian_filter(img2, 1.5)
 
@@ -76,63 +80,54 @@ def ssim(img1, img2):
     ssim_map = ((2 * mu1 * mu2 + C1) * (2 * sigma12 + C2)) / ((mu1 ** 2 + mu2 ** 2 + C1) * (sigma1 + sigma2 + C2))
 
     ssim_val = ssim_map.mean()
-    return 0.5 * (1 - ssim_val)
+    return 1 - 0.5 * (1 - ssim_val)
 
 
-def image_delta_e(file1, file2):
-    """
-    Calculate the average Delta E (CIE 2000) color difference between two images provided as file objects.
+def average_delta_e(image1, image2):
+    # Load images
+    # Convert images to Lab color space
+    image1_lab = rgb2lab(image1)
+    image2_lab = rgb2lab(image2)
 
-    :param file1: File object of the first image.
-    :param file2: File object of the second image.
-    :return: Average Delta E 2000 value.
-    """
-    # Load images from file objects
-    image1 = np.array(Image.open(file1))
-    image2 = np.array(Image.open(file2))
-
-    # Check if images have the same dimensions
-    if image1.shape != image2.shape:
-        raise ValueError("Images must have the same dimensions")
-
-    # Initialize variables for Delta E calculation
-    delta_e_total = 0
-    num_pixels = image1.shape[0] * image1.shape[1]
+    # Resize images if they are not the same size
+    if image1_lab.shape != image2_lab.shape:
+        image2_lab = cv2.resize(image2_lab, (image1_lab.shape[1], image1_lab.shape[0]), interpolation=cv2.INTER_AREA)
 
     # Calculate Delta E for each pixel
-    for i in range(image1.shape[0]):
-        for j in range(image1.shape[1]):
-            # Convert RGB to Lab
-            color1_rgb = sRGBColor(float(image1[i, j, 0]), float(image1[i, j, 1]), float(image1[i, j, 2]),
-                                   is_upscaled=True)
-            color1_lab = convert_color(color1_rgb, LabColor)
+    delta_e = deltaE_ciede2000(image1_lab, image2_lab)
 
-            color2_rgb = sRGBColor(float(image2[i, j, 0]), float(image2[i, j, 1]), float(image2[i, j, 2]),
-                                   is_upscaled=True)
-            color2_lab = convert_color(color2_rgb, LabColor)
+    # Average Delta E
+    avg = np.mean(delta_e)
 
-            # Compute Delta E for the current pixel
-            delta_e = delta_e_cie2000(color1_lab, color2_lab)
-            delta_e_total += delta_e
-
-    # Calculate average Delta E
-    avg_delta_e = delta_e_total / num_pixels
-
-    return min(avg_delta_e / 100, 1)
-    # return avg_delta_e
+    return 1 - min(avg / 100, 1)
 
 
 def mse(image_a, image_b, max_mse=10000):
-    """
-    Compute the mean squared error between two images.
+    err = np.mean((image_a.astype("float") - image_b.astype("float")) ** 2)
+    return 1 - min(err / max_mse, 1)
 
-    :param image_a: First image.
-    :param image_b: Second image.
-    :param max_mse: Maximum MSE value for normalization.
-    :return: MSE value.
-    """
-    err = np.sum((image_a.astype("float") - image_b.astype("float")) ** 2)
-    err /= float(image_a.shape[0] * image_a.shape[1])
 
-    # return err
-    return min(err / max_mse, 1)
+def mse_raw(image_a, image_b):
+    err = np.mean((image_a.astype("float") - image_b.astype("float")) ** 2)
+    return err
+
+
+# if __name__ == '__main__':
+#     # img1 = Image.open('images/mona_lisa.jpg')
+#     # img2 = Image.open('images/mona_lisa_0.jpg')
+#     # print(combine_metrics({'psnr': True, 'ssim': True, 'delta_e': False, 'mse': True}, img1, img2))
+#     # print(combine_metrics({'psnr': True, 'ssim': True, 'delta_e': False, 'mse': True}, img1, img1))
+#     # print(combine_metrics({'psnr': True, 'ssim': True, 'delta_e': False, 'mse': True}, img2, img2))
+#     #
+#     # img1 = Image.open('images/mona_lisa.jpg')
+#     # img2 = Image.open('images/mona_lisa_0.jpg')
+#     # print(combine_metrics({'psnr': True, 'ssim': True, 'delta_e': False, 'mse': True}, img1, img2))
+#     # print(combine_metrics({'psnr': True, 'ssim': True, 'delta_e': False, 'mse': True}, img1, img1))
+#     # print(combine_metrics({'psnr': True, 'ssim': True, 'delta_e': False, 'mse': True}, img2, img2))
+#
+#     img1 = Image.open('images/mona_lisa.jpg')
+#     img2 = Image.open('images/mona_lisa_0.jpg')
+#     # print(average_delta_e(img1, img2))
+#     print(combine_metrics({'psnr': True, 'ssim': True, 'delta_e': True, 'mse': True}, img1, img2))
+#     # print(combine_metrics({'psnr': True, 'ssim': True, 'delta_e': False, 'mse': True}, img1, img1))
+#     # print(combine_metrics({'psnr': True, 'ssim': True, 'delta_e': False, 'mse': True}, img2, img2))

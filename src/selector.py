@@ -5,6 +5,6 @@ def selector(populations, fit_func, method='best'):
 
     paired_populations = []
     for i in range(0, len(sorted_by_fitness), 2):
-        paired_populations.append(tuple(sorted_by_fitness[i:i+2]))
+        paired_populations.append(tuple(sorted_by_fitness[i:i + 2]))
 
     return paired_populations
