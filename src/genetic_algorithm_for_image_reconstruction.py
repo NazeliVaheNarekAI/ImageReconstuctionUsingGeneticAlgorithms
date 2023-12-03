@@ -32,7 +32,7 @@ def genetic_algorithm_image_reconstruction(target_image, initial_population, gen
         fitness_scores = []
 
         for individual in current_population:
-            fitness = combine_metrics({'psnr': False, 'ssim': False, 'delta_e': False, 'mse': True}, individual,
+            fitness = combine_metrics({'psnr': False, 'ssim': False, 'delta_e': True, 'mse': False}, individual,
                                       target_image)
             fitness_scores.append(fitness)
             if fitness > best_fitness:
