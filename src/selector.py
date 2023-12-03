@@ -8,6 +8,8 @@
 #         paired_populations.append(tuple(sorted_by_fitness[i:i + 2]))
 #
 #     return paired_populations
+import random
+
 
 # def selector(populations, fitness_values, method='best', max_population_size=50):
 #     # Pair each population with its fitness score
@@ -30,9 +32,11 @@ def selector(sorted_by_fitness, method='best', max_population_size=50):
     # # Sort the pairs by fitness score
     # sorted_by_fitness = sorted(paired_fitness, key=lambda x: x[1], reverse=(method == 'best'))
 
+    copy = sorted_by_fitness.copy()
+    random.shuffle(copy)
     # Pair the populations for selection
     paired_populations = []
-    for i in range(0, len(sorted_by_fitness), 2):
-        paired_populations.append(tuple(sorted_by_fitness[i:i + 2]))
+    for i in range(0, len(copy), 2):
+        paired_populations.append(tuple(copy[i:i + 2]))
 
     return paired_populations

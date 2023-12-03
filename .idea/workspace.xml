@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9907c958-d995-4448-bb35-1954320324fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/genetic_algorithm_for_image_reconstruction.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/genetic_algorithm_for_image_reconstruction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/download.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/download_result.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result copy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/photo_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/photo_1_result.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/selector.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/selector.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
