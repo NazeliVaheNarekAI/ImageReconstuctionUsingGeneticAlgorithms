@@ -101,7 +101,6 @@ def average_delta_e(image1, image2):
 
     return 1 - min(avg / 100, 1)
 
-
 def mse(image_a, image_b, max_mse=10000):
     err = np.mean((image_a.astype("float") - image_b.astype("float")) ** 2)
     return 1 - min(err / max_mse, 1)
