@@ -12,7 +12,7 @@ import imageio # For gif saving
 import evaluationfunctions as ef
 
 #Load and show original image for tracking (convert to black and white)
-original_image = Image.open("images/download.jpeg").convert("L")
+original_image = Image.open("images/download.jpg").convert("L")
 original_height, original_width  = original_image.size
 cv2.imshow("Original", np.array(original_image))
 cv2.imwrite("original.jpg",np.array(original_image))

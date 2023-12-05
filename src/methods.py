@@ -1,7 +1,7 @@
 from PIL import Image
 
 
-def chunking_with_padding(img, target, rows, cols, ga_function, blend_width=10, padding=(10, 10, 10, 10)):
+def chunking_with_padding(target, rows, cols, ga_function, blend_width=10, padding=(10, 10, 10, 10)):
     """
     The function divides the given image into chunks with padding,
     applies a GA to them individually, and blends the overlapping regions.
@@ -15,10 +15,10 @@ def chunking_with_padding(img, target, rows, cols, ga_function, blend_width=10, 
     :param padding: Padding from the sides (left, right, upper, lower) when processing chunks
     :return: The image after chunking with GA and blending
     """
-    if img.size != target.size:
+    if target.size != target.size:
         raise ValueError("Images must be of the same size")
 
-    width, height = img.size
+    width, height = target.size
 
     if width % cols != 0 or height % rows != 0:
         raise ValueError("Number of rows and columns must evenly divide the image dimensions")
@@ -41,11 +41,12 @@ def chunking_with_padding(img, target, rows, cols, ga_function, blend_width=10, 
             padded_right = min(right + padding[1], width)
             padded_lower = min(lower + padding[3], height)
 
-            chunk = img.crop((padded_left, padded_upper, padded_right, padded_lower))
+            # chunk = img.crop((padded_left, padded_upper, padded_right, padded_lower))
             target_chunk = target.crop((padded_left, padded_upper, padded_right, padded_lower))
 
             # Apply the genetic algorithm function to the padded chunk
-            res_chunk = ga_function(chunk, target_chunk)
+            # res_chunk = ga_function(chunk, target_chunk)
+            res_chunk = ga_function(target_chunk)
 
             res_chunks.append(res_chunk)
 
