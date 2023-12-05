@@ -11,9 +11,11 @@ import selector as selector
 from tqdm import tqdm
 import methods as methods
 
+
 def gen_alg(target_image):
     return genetic_algorithm_image_reconstruction(target_image, generations=1000,
-                                                        mutation_prob=0.1, initial_population_size=50)
+                                                  mutation_prob=0.1, initial_population_size=50)
+
 
 # Defining the Genetic Algorithm for Image Reconstruction
 def genetic_algorithm_image_reconstruction(target_image, generations, mutation_prob, initial_population_size):
@@ -51,8 +53,8 @@ def genetic_algorithm_image_reconstruction(target_image, generations, mutation_p
         # selected_pairs = selector(sorted_by_fitness, method='best')
         selected_pairs = selector.get_parents(current_population, fitness_scores)
 
-        if gen % 50 == 0:
-            best_image.save('images/mona_lisa_result_' + str(gen) + '.jpg')
+        # if gen % 50 == 0:
+        #     best_image.save('images/mona_lisa_result_' + str(gen) + '.jpg')
         # Crossover and Mutation
         next_generation = []
         # if len(selected_pairs) % 2 == 1:
@@ -87,8 +89,8 @@ def calculate_fitness(image, target_image):
 def process_pair(pair, mutation_prob, unique_colors, frequency):
     img1, img2 = pair[0], pair[1]
     # Crossover
-    child = crossover(img1, img2, {'blend': 0, 'row_column_slicing': 0.15, 'pixel_wise': 0,
-                                   'random_row_column': 0.85})
+    child = crossover(img1, img2, {'blend': 0, 'row_column_slicing': 1, 'pixel_wise': 0,
+                                   'random_row_column': 0})
     # Mutation
     if random.random() < mutation_prob:
         child = image_mutation(child, pixel_mutation_prob=0.3, shape_mutation_prob=0.7,
@@ -107,27 +109,33 @@ def create_population(unique_colors, frequency, size, num_individuals):
 
 
 # Simulating the genetic algorithm (this is a dummy simulation, actual implementation will require real images)
-if __name__ == '__main__':
-    target_image = Image.open('images/Saryan.jpg')
-    # downscale to 75x75
-    # target_image = target_image.resize((100, 100))
+# if __name__ == '__main__':
+#     target_image = Image.open('images/StarryNight.jpg')
+#     initial_size = target_image.size
+#     # downscale to 75xproportionalSize
+#     # target_image = target_image.resize((100, 100))
+#     target_image = target_image.resize((75, target_image.size[1] * 75 // target_image.size[0]))
+#
+#     result = genetic_algorithm_image_reconstruction(target_image, generations=16000,
+#                                                     mutation_prob=0.2, initial_population_size=50)
+#     # print(result)
+#     #
+#     # # interpolate to 350x350
+#     # # result = result.resize((1280, 1280))
+#     # result.save('images/result.jpeg')
+#     result = result.resize(initial_size)
+#     result.save('images/result.jpeg')
 
-    result = genetic_algorithm_image_reconstruction(target_image, generations=200000,
-                                                    mutation_prob=0.1, initial_population_size=50)
-    print(result)
+
+if __name__ == '__main__':
+    target_image = Image.open('images/StarryNight.jpg')
+    # downscale to 75x75
+    base_size=600
+    resized_target = target_image.resize((base_size, target_image.size[1] * base_size // target_image.size[0]))
+    print(resized_target.size)
+    result = methods.chunking_with_padding(resized_target, 25, 8, gen_alg, blend_width=0)
+
 
     # interpolate to 350x350
-    # result = result.resize((1280, 1280))
+    result = result.resize(target_image.size)
     result.save('images/result.jpeg')
-
-#
-# if __name__ == '__main__':
-#     target_image = Image.open('images/Saryan.jpg')
-#     # downscale to 75x75
-#
-#     result = methods.chunking_with_padding(target_image, 2, 2, gen_alg)
-#
-#
-#     # interpolate to 350x350
-#
-#     result.save('images/result.jpeg')
