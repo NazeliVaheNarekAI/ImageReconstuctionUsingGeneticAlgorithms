@@ -1,15 +1,13 @@
 import random
 
-from PIL import Image
-
-from population import compute_color_distribution, generate_random_shapes_image, generate_noise_from_distribution
-# Importing necessary functions from the files
-from crossover import crossover
-from evaluationfunctions import combine_metrics
-from mutations import image_mutation
-import selector as selector
 from tqdm import tqdm
-import methods as methods
+
+import src.selector as selector
+# Importing necessary functions from the files
+from src.crossover import crossover
+from src.evaluationfunctions import combine_metrics
+from src.mutations import image_mutation
+from src.population import compute_color_distribution, generate_random_shapes_image
 
 
 # Defining the Genetic Algorithm for Image Reconstruction
@@ -68,7 +66,7 @@ def genetic_algorithm_image_reconstruction(target, generations, mutation_prob, i
         selected_pairs = selector.get_parents(current_population, fitness_scores)
 
         if gen % 50 == 0:
-            best_image.save('images/result_' + str(gen) + '.jpg')
+            best_image.save('images/temp/result_' + str(gen) + '.jpg')
 
         results = []
         for pair in selected_pairs:
@@ -162,27 +160,3 @@ def gen_alg_for_chunking(target, generations=250, mutation_prob=0.1, initial_pop
                                                   fit, mut)
 
 
-if __name__ == '__main__':
-    use_chunking_mode = False  # set this to True to use the Chunking mode, False to use the normal mode
-
-    fitness = {'psnr': False, 'ssim': False, 'delta_e': False, 'mse': True}
-    mutation = {'pixel_mutation_prob': 0.3, 'shape_mutation_prob': 0.7, 'pixel_altering_prob': 0.5,
-                'max_pixel_range': 125, 'number_of_shapes': 3}
-    if not use_chunking_mode:
-        target_image = Image.open('images/LittlePrince.jpg')
-        initial_size = target_image.size
-        target_image = target_image.resize((200, target_image.size[1] * 200 // target_image.size[0]))
-        result = genetic_algorithm_image_reconstruction(target_image, generations=16000,
-                                                        mutation_prob=0.2, initial_population_size=50,
-                                                        fitness_options=fitness, mutation_options=mutation)
-        result = result.resize(initial_size)
-        result.save('images/result.jpeg')
-
-    else:
-        target_image = Image.open('images/Dior.jpg')
-        base_size = 600
-        resized_target = target_image.resize((base_size, target_image.size[1] * base_size // target_image.size[0]))
-        print(resized_target.size)
-        result = methods.chunking_with_padding(resized_target, 25, 25, gen_alg_for_chunking, blend_width=10)
-        result = result.resize(target_image.size)
-        result.save('images/result.jpeg')
