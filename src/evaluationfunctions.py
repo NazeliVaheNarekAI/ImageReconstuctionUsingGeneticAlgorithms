@@ -84,6 +84,14 @@ def ssim(img1, img2):
 
 
 def average_delta_e(image1, image2):
+    """
+    Calculate the average delta E between two images in Lab color space.
+
+    :param image1: The first image.
+    :param image2: The second image.
+    :return: The average delta E value.
+
+    """
     # Load images
     # Convert images to Lab color space
     image1_lab = rgb2lab(image1)
@@ -101,7 +109,16 @@ def average_delta_e(image1, image2):
 
     return 1 - min(avg / 100, 1)
 
+
 def mse(image_a, image_b, max_mse=10000):
+    """
+    :param image_a: The first input image. It should be a numpy array representing an image.
+    :param image_b: The second input image. It should also be a numpy array representing an image.
+    :param max_mse: The maximum mean squared error (MSE) value allowed. Default is 10000.
+
+    :return: A value representing the structural similarity index between the two images.
+            It is calculated as 1 minus the normalized MSE value, with a maximum of 1 and a minimum of 0.
+    """
     err = np.mean((image_a.astype("float") - image_b.astype("float")) ** 2)
     return 1 - min(err / max_mse, 1)
 
@@ -109,24 +126,3 @@ def mse(image_a, image_b, max_mse=10000):
 def mse_raw(image_a, image_b):
     err = np.mean((image_a.astype("float") - image_b.astype("float")) ** 2)
     return err
-
-
-# if __name__ == '__main__':
-#     # img1 = Image.open('images/mona_lisa.jpg')
-#     # img2 = Image.open('images/mona_lisa_0.jpg')
-#     # print(combine_metrics({'psnr': True, 'ssim': True, 'delta_e': False, 'mse': True}, img1, img2))
-#     # print(combine_metrics({'psnr': True, 'ssim': True, 'delta_e': False, 'mse': True}, img1, img1))
-#     # print(combine_metrics({'psnr': True, 'ssim': True, 'delta_e': False, 'mse': True}, img2, img2))
-#     #
-#     # img1 = Image.open('images/mona_lisa.jpg')
-#     # img2 = Image.open('images/mona_lisa_0.jpg')
-#     # print(combine_metrics({'psnr': True, 'ssim': True, 'delta_e': False, 'mse': True}, img1, img2))
-#     # print(combine_metrics({'psnr': True, 'ssim': True, 'delta_e': False, 'mse': True}, img1, img1))
-#     # print(combine_metrics({'psnr': True, 'ssim': True, 'delta_e': False, 'mse': True}, img2, img2))
-#
-#     img1 = Image.open('images/mona_lisa.jpg')
-#     img2 = Image.open('images/mona_lisa_0.jpg')
-#     # print(average_delta_e(img1, img2))
-#     print(combine_metrics({'psnr': True, 'ssim': True, 'delta_e': True, 'mse': True}, img1, img2))
-#     # print(combine_metrics({'psnr': True, 'ssim': True, 'delta_e': False, 'mse': True}, img1, img1))
-#     # print(combine_metrics({'psnr': True, 'ssim': True, 'delta_e': False, 'mse': True}, img2, img2))

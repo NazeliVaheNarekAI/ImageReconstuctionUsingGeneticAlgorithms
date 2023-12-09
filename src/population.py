@@ -13,11 +13,6 @@ def compute_color_distribution(image):
 
 
 def generate_noise_from_distribution(unique_colors, frequency, image_size):
-    # noise_image_data = np.random.choice(len(unique_colors), size=image_size[0] * image_size[1], p=frequency)
-    # noise_image = np.array([unique_colors[i] for i in noise_image_data]).reshape(image_size[1], image_size[0], 3)
-    #
-    # return Image.fromarray(np.uint8(noise_image))
-
     # Choose indices based on the frequency distribution
     indices = np.random.choice(len(unique_colors), size=image_size[0] * image_size[1], p=frequency)
 
@@ -39,13 +34,6 @@ def process_image(image_path):
     return noise_image
 
 
-# # %%
-# img = process_image('Landscape-Color.jpg')
-#
-# img.show()
-
-
-# %%
 def generate_random_shapes_image(unique_colors, image_size, number_of_shapes):
     bg_color = tuple(random.choice(unique_colors))
 
@@ -92,16 +80,3 @@ def generate_random_shapes_image(unique_colors, image_size, number_of_shapes):
             draw.chord([x1, y1, x2, y2], start=0, end=180, fill=color)
 
     return new_image
-
-# img_path = 'Landscape-Color.jpg'
-# original_image = Image.open(img_path)
-# unique_colors = compute_color_distribution(original_image)
-#
-# number_of_shapes = 1000
-# shapes_image = generate_random_shapes_image(unique_colors, original_image.size, number_of_shapes)
-# shapes_image.show()
-
-if __name__ == '__main__':
-    img_path = 'images/download.jpg'
-    original_image = Image.open(img_path)
-    a = process_image(original_image)

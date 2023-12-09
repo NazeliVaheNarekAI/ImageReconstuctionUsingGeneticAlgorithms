@@ -13,7 +13,11 @@ import methods as methods
 
 
 def gen_alg(target_image):
-    return genetic_algorithm_image_reconstruction(target_image, generations=1000,
+    """
+    :param target_image: The image that the genetic algorithm will attempt to reconstruct.
+    :return: The genetically reconstructed image that closely resembles the target image.
+    """
+    return genetic_algorithm_image_reconstruction(target_image, generations=250,
                                                   mutation_prob=0.1, initial_population_size=50)
 
 
@@ -53,12 +57,8 @@ def genetic_algorithm_image_reconstruction(target_image, generations, mutation_p
         # selected_pairs = selector(sorted_by_fitness, method='best')
         selected_pairs = selector.get_parents(current_population, fitness_scores)
 
-        # if gen % 50 == 0:
-        #     best_image.save('images/mona_lisa_result_' + str(gen) + '.jpg')
-        # Crossover and Mutation
-        next_generation = []
-        # if len(selected_pairs) % 2 == 1:
-        #     selected_pairs.append(selected_pairs[-1])
+        if gen % 50 == 0:
+            best_image.save('images/mona_lisa_result_' + str(gen) + '.jpg')
 
         results = []
         for pair in selected_pairs:
@@ -87,6 +87,15 @@ def calculate_fitness(image, target_image):
 
 
 def process_pair(pair, mutation_prob, unique_colors, frequency):
+    """
+    Process a pair of images.
+
+    :param pair: The pair of images.
+    :param mutation_prob: The probability of mutation.
+    :param unique_colors: The number of unique colors in the images.
+    :param frequency: The frequency of the images.
+    :return: The processed child image.
+    """
     img1, img2 = pair[0], pair[1]
     # Crossover
     child = crossover(img1, img2, {'blend': 0, 'row_column_slicing': 1, 'pixel_wise': 0,
@@ -101,6 +110,15 @@ def process_pair(pair, mutation_prob, unique_colors, frequency):
 
 # Dummy code to simulate initial population and target image (to be replaced with actual images)
 def create_population(unique_colors, frequency, size, num_individuals):
+    """
+    Create a population of individuals with random shapes images.
+
+    :param unique_colors: A list of unique colors.
+    :param frequency: A list of frequencies of each color.
+    :param size: The size of the images.
+    :param num_individuals: The number of individuals in the population.
+    :return: A list of random shapes images.
+    """
     # return [generate_noise_from_distribution(unique_colors, frequency, size) for _ in range(num_individuals)]
 
     # use shapes
@@ -108,34 +126,23 @@ def create_population(unique_colors, frequency, size, num_individuals):
     # return [generate_noise_from_distribution(unique_colors, frequency, size) for _ in range(num_individuals)]
 
 
-# Simulating the genetic algorithm (this is a dummy simulation, actual implementation will require real images)
-# if __name__ == '__main__':
-#     target_image = Image.open('images/StarryNight.jpg')
-#     initial_size = target_image.size
-#     # downscale to 75xproportionalSize
-#     # target_image = target_image.resize((100, 100))
-#     target_image = target_image.resize((75, target_image.size[1] * 75 // target_image.size[0]))
-#
-#     result = genetic_algorithm_image_reconstruction(target_image, generations=16000,
-#                                                     mutation_prob=0.2, initial_population_size=50)
-#     # print(result)
-#     #
-#     # # interpolate to 350x350
-#     # # result = result.resize((1280, 1280))
-#     # result.save('images/result.jpeg')
-#     result = result.resize(initial_size)
-#     result.save('images/result.jpeg')
-
-
 if __name__ == '__main__':
-    target_image = Image.open('images/StarryNight.jpg')
-    # downscale to 75x75
-    base_size=600
-    resized_target = target_image.resize((base_size, target_image.size[1] * base_size // target_image.size[0]))
-    print(resized_target.size)
-    result = methods.chunking_with_padding(resized_target, 25, 8, gen_alg, blend_width=0)
+    use_chunking_mode = True   # set this to True to use the Chunking modem, False to use the normal mode
 
+    if not use_chunking_mode:
+        target_image = Image.open('images/LittlePrince.jpg')
+        initial_size = target_image.size
+        target_image = target_image.resize((200, target_image.size[1] * 200 // target_image.size[0]))
+        result = genetic_algorithm_image_reconstruction(target_image, generations=16000,
+                                                        mutation_prob=0.2, initial_population_size=50)
+        result = result.resize(initial_size)
+        result.save('images/result.jpeg')
 
-    # interpolate to 350x350
-    result = result.resize(target_image.size)
-    result.save('images/result.jpeg')
+    else:
+        target_image = Image.open('images/Dior.jpg')
+        base_size = 600
+        resized_target = target_image.resize((base_size, target_image.size[1] * base_size // target_image.size[0]))
+        print(resized_target.size)
+        result = methods.chunking_with_padding(resized_target, 25, 25, gen_alg, blend_width=10)
+        result = result.resize(target_image.size)
+        result.save('images/result.jpeg')

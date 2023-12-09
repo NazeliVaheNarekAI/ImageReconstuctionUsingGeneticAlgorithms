@@ -30,6 +30,27 @@ def image_mutation(image, pixel_mutation_prob, shape_mutation_prob, pixel_alteri
 
 
 def pixel_wise_mutation(image, probability, max_value):
+    """
+    :param image: A PIL Image object representing the input image.
+    :param probability: The probability of a pixel being mutated. Must be a float between 0 and 1.
+    :param max_value: The maximum value that a pixel can take. Must be an integer between 0 and 255.
+    :return: A mutated PIL Image object.
+
+    This method performs pixel-wise mutation on the input image. It randomly alters the pixel values based on the given probability and maximum value.
+
+    The method first converts the input image to a numpy array. It then generates a matrix of random values and a boolean mask with the same shape as the image. The random values are integers
+    * between 0 and the maximum value. The boolean mask is created based on the given probability, where a True value indicates a pixel to be mutated.
+
+    The method uses numpy's element-wise addition and conditional expression to safely add random values to the image only where the mask is True. It ensures that the resulting values are
+    * within the correct range by clipping them between 0 and 255.
+
+    Finally, the method converts the mutated numpy array back to a PIL Image object and returns it.
+
+    Example usage:
+    image = Image.open('input.jpg')
+    mutated_image = pixel_wise_mutation(image, 0.5, 255)
+    mutated_image.save('output.jpg')
+    """
     # Convert image to numpy array
     img_array = np.array(image)
 
@@ -49,6 +70,27 @@ def pixel_wise_mutation(image, probability, max_value):
 
 
 def add_random_shape_mutation(image, number_of_shapes=1, unique_colors=None, frequency=None):
+    """
+    Add Random Shape Mutation
+
+    Add random shapes to an image.
+
+    :param image: The original image to which shapes will be added.
+    :type image: PIL.Image.Image
+
+    :param number_of_shapes: The number of shapes to add. Default is 1.
+    :type number_of_shapes: int
+
+    :param unique_colors: List of unique colors to be used for the shapes. Default is None.
+    :type unique_colors: list, optional
+
+    :param frequency: List of frequencies corresponding to the unique colors. Default is None.
+    :type frequency: list, optional
+
+    :return: The image with the added random shapes.
+    :rtype: PIL.Image.Image
+
+    """
     image_copy = image.copy()
     draw = ImageDraw.Draw(image_copy)
     image_size = image.size
@@ -91,9 +133,3 @@ def add_random_shape_mutation(image, number_of_shapes=1, unique_colors=None, fre
         elif shape_type == 'chord':
             draw.chord([x1, y1, x2, y2], start=0, end=180, fill=color)
     return image_copy
-
-
-if __name__ == '__main__':
-    img = Image.open('images/mona_lisa.jpg')
-    img = image_mutation(img, 0, 1, 1, 100, 2)
-    img.show()

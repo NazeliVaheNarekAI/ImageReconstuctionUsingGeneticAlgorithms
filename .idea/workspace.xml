@@ -5,403 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9907c958-d995-4448-bb35-1954320324fa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ReadMe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/ArturHovhannisyan.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/Dalle.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/Dior.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/Gustav_Klimt.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/LittlePrince.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/The-Kiss.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RandomShapeNoise.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/evaluationfunctions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/evaluationfunctions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/genetic_algorithm_for_image_reconstruction.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/genetic_algorithm_for_image_reconstruction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_1000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_10000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_10050.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_10100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_10150.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_10200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_10250.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_10300.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_10350.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_10400.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_10450.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_1050.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_10500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_10550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_10600.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_10650.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_10700.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_10750.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_10800.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_10850.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_10900.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_10950.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_1100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_11000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_11050.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_11100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_11150.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_11200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_11250.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_11300.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_11350.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_11400.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_11450.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_1150.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_11500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_11550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_11600.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_11650.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_11700.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_11750.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_11800.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_11850.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_11900.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_11950.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_1200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_12000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_12050.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_12100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_12150.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_12200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_12250.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_12300.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_12350.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_12400.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_12450.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_1250.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_12500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_12550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_12600.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_12650.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_12700.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_12750.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_12800.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_12850.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_12900.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_12950.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_1300.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_13000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_13050.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_13100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_13150.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_13200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_13250.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_13300.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_13350.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_13400.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_13450.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_1350.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_13500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_13550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_13600.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_13650.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_13700.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_13750.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_13800.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_13850.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_13900.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_13950.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_1400.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_14000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_14050.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_14100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_14150.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_14200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_14250.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_14300.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_14350.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_14400.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_14450.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_1450.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_14500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_14550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_14600.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_14650.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_14700.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_14750.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_14800.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_14850.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_14900.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_14950.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_150.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_1500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_15000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_15050.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_15100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_15150.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_15200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_15250.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_15300.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_15350.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_15400.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_15450.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_1550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_15500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_15550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_15600.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_15650.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_15700.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_15750.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_15800.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_15850.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_15900.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_15950.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_1600.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_16000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_16050.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_16100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_16150.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_16200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_16250.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_16300.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_16350.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_16400.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_16450.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_1650.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_16500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_16550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_16600.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_16650.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_16700.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_16750.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_16800.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_16850.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_16900.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_16950.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_1700.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_17000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_17050.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_17100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_17150.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_17200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_17250.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_17300.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_17350.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_17400.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_17450.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_1750.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_17500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_17550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_17600.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_17650.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_17700.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_17750.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_17800.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_17850.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_17900.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_17950.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_1800.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_18000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_18050.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_18100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_18150.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_18200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_18250.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_18300.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_18350.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_18400.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_18450.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_1850.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_18500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_18550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_18600.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_18650.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_18700.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_18750.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_18800.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_18850.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_18900.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_18950.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_1900.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_19000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_19050.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_19100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_19150.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_19200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_19250.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_19300.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_19350.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_19400.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_19450.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_1950.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_19500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_19550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_19600.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_19650.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_19700.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_2000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_2050.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_2100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_2150.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_2200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_2250.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_2300.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_2350.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_2400.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_2450.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_250.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_2500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_2550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_2600.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_2650.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_2700.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_2750.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_2800.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_2850.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_2900.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_2950.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_300.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_3000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_3050.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_3100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_3150.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_3200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_3250.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_3300.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_3350.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_3400.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_3450.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_350.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_3500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_3550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_3600.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_3650.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_3700.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_3750.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_3800.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_3850.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_3900.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_3950.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_400.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_4000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_4050.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_4100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_4150.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_4200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_4250.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_4300.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_4350.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_4400.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_4450.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_450.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_4500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_4550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_4600.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_4650.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_4700.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_4750.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_4800.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_4850.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_4900.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_4950.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_5000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_5050.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_5100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_5150.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_5200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_5250.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_5300.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_5350.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_5400.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_5450.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_5500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_5550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_5600.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_5650.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_5700.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_5750.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_5800.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_5850.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_5900.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_5950.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_600.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_6000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_6050.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_6100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_6150.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_6200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_6250.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_6300.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_6350.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_6400.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_6450.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_650.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_6500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_6550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_6600.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_6650.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_6700.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_6750.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_6800.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_6850.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_6900.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_6950.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_700.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_7000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_7050.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_7100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_7150.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_7200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_7250.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_7300.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_7350.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_7400.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_7450.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_750.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_7500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_7550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_7600.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_7650.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_7700.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_7750.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_7800.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_7850.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_7900.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_7950.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_800.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_8000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_8050.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_8100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_8150.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_8200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_8250.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_8300.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_8350.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_8400.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_8450.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_850.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_8500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_8550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_8600.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_8650.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_8700.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_8750.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_8800.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_8850.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_8900.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_8950.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_900.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_9000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_9050.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_9100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_9150.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_9200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_9250.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_9300.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_9350.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_9400.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_9450.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_950.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_9500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_9550.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_9600.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_9650.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_9700.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_9750.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_9800.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_9850.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_9900.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mona_lisa_result_9950.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/Monika.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/Results11_Professor/download.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/Results2_8000/download_result.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/Results3_16000/download_result.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/Results4_16000/download_result.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/result.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/result.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jpg/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jpg/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mutations.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/mutations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/population.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/population.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/selector.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/selector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -415,17 +42,39 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2ZIH3bcJl5tt6790GUmaplVhH4p" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.genetic_algorithm_for_image_reconstruction.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/vahe/PycharmProjects/ImageReconstuctionUsingGeneticAlgorithms/src/images",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/images" />
     </key>
@@ -433,6 +82,7 @@
   <component name="RunManager" selected="Python.genetic_algorithm_for_image_reconstruction">
     <configuration name="evaluationfunctions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ImageReconstuctionUsingGeneticAlgorithms" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -455,6 +105,7 @@
     </configuration>
     <configuration name="genetic_algorithm_for_image_reconstruction" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ImageReconstuctionUsingGeneticAlgorithms" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -477,6 +128,7 @@
     </configuration>
     <configuration name="mutations" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ImageReconstuctionUsingGeneticAlgorithms" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -499,6 +151,7 @@
     </configuration>
     <configuration name="population" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ImageReconstuctionUsingGeneticAlgorithms" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -521,6 +174,7 @@
     </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ImageReconstuctionUsingGeneticAlgorithms" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -544,22 +198,41 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.genetic_algorithm_for_image_reconstruction" />
-        <item itemvalue="Python.population" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.population" />
         <item itemvalue="Python.evaluationfunctions" />
         <item itemvalue="Python.mutations" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-67fca87a943a-c986f194a52a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.11799.259" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9907c958-d995-4448-bb35-1954320324fa" name="Changes" comment="" />
+      <created>1702102475661</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702102475661</updated>
+      <workItem from="1702102478457" duration="1432000" />
+    </task>
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ImageReconstuctionUsingGeneticAlgorithms$test.coverage" NAME="test Coverage Results" MODIFIED="1701609632584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/ImageReconstuctionUsingGeneticAlgorithms$genetic_algorithm_for_image_reconstruction.coverage" NAME="genetic_algorithm_for_image_reconstruction Coverage Results" MODIFIED="1702106326490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/ImageReconstuctionUsingGeneticAlgorithms$evaluationfunctions.coverage" NAME="evaluationfunctions Coverage Results" MODIFIED="1701525157866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/ImageReconstuctionUsingGeneticAlgorithms$population.coverage" NAME="population Coverage Results" MODIFIED="1701719341381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/ImageReconstuctionUsingGeneticAlgorithms$mutations.coverage" NAME="mutations Coverage Results" MODIFIED="1701521408681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/ImageReconstuctionUsingGeneticAlgorithms$genetic_algorithm_for_image_reconstruction.coverage" NAME="genetic_algorithm_for_image_reconstruction Coverage Results" MODIFIED="1701779337833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/ImageReconstuctionUsingGeneticAlgorithms$evaluationfunctions.coverage" NAME="evaluationfunctions Coverage Results" MODIFIED="1701525157866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/ImageReconstuctionUsingGeneticAlgorithms$ssim.coverage" NAME="ssim Coverage Results" MODIFIED="1701608955021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/ImageReconstuctionUsingGeneticAlgorithms$test.coverage" NAME="test Coverage Results" MODIFIED="1701799430117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
 </project>
